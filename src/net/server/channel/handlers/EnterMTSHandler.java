@@ -67,7 +67,7 @@ public final class EnterMTSHandler extends AbstractMaplePacketHandler {
                     }
                     chr.changeMap(910000000, "out00");
                 }
-            return;
+                return;
             }
 
             if(chr.getEventInstance() != null) {

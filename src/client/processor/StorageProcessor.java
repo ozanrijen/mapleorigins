@@ -49,12 +49,6 @@ public class StorageProcessor {
                 MapleCharacter chr = c.getPlayer();
                 MapleStorage storage = chr.getStorage();
                 byte mode = slea.readByte();
-
-                if (chr.getLevel() < 15){
-                        chr.dropMessage(1, "You may only use the storage once you have reached level 15.");
-                        c.announce(MaplePacketCreator.enableActions());
-                        return;
-                }
                 
                 if (c.tryacquireClient()) {
                         try {
