@@ -28,7 +28,7 @@ function start(mode, type, selection) {
 	else if (status == 1){
 		qm.forceStartQuest();
 		qm.sendOk("I am confident #kScarrs#k will do everything to help you.");
-        else if (status == 2){
+            } else if (status == 2){
 		qm.dispose();
 	}
 }
@@ -43,7 +43,7 @@ function end(mode, type, selection) {
 			return;
 		}
 	}
-	if (status == 0)
+	if (status == 0) {
 		qm.sendOk("Ah, so you're the explorer people were talking about. I'm #bScarrs, the Royal Mushroom Scholar#k representing the Kingdom of Mushroom. So you need some #kKiller Mushroom Spores#k?");
 	} else if (status == 1){
                 qm.forceCompleteQuest();
