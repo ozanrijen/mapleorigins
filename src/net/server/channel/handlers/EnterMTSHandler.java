@@ -54,8 +54,20 @@ public final class EnterMTSHandler extends AbstractMaplePacketHandler {
             c.announce(MaplePacketCreator.enableActions());
         } else {
             if (!ServerConstants.USE_MTS) {
-                c.announce(MaplePacketCreator.enableActions());
-                return;
+                if (chr.getCashShop().isOpened() || chr.getMiniGame() != null || chr.getPlayerShop() != null || !chr.isAlive()) {
+                    c.announce(MaplePacketCreator.enableActions());
+                } else if (FieldLimit.CANNOTMIGRATE.check(chr.getMap().getFieldLimit()) 
+                        || chr.getEventInstance() != null
+                        || MapleMiniDungeonInfo.isDungeonMap(chr.getMapId())) {
+                    chr.dropMessage(5, "You cannot enter the Free Market from this map.");
+                    c.announce(MaplePacketCreator.enableActions());
+                } else {
+                    if (!(chr.getMapId() >= 910000000 && chr.getMapId() <= 910000022)) {
+                        chr.saveLocation("FREE_MARKET");
+                    }
+                    chr.changeMap(910000000, "out00");
+                }
+            return;
             }
 
             if(chr.getEventInstance() != null) {
