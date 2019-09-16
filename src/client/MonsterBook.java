@@ -126,6 +126,13 @@ public final class MonsterBook {
             lock.unlock();
         }
     }
+    
+    public int getCardLevel(int cardid) {
+        if (cards.get(cardid) != null) {
+            return cards.get(cardid);
+        }
+        return 0;
+    }
 
     public int getNormalCard() {
         lock.lock();

@@ -66,7 +66,13 @@ public class MapleLootManager {
                 } /*else if (restricted && qItemStatus == 1) {
                     continue;
                 }*/
-            } /*else if (restricted && chrInv.hasItem(dropEntry.itemId, 1) > 0) {   // thanks Conrad, Legalize for noticing eligible loots not being available to drop for non-killer parties
+            }
+            if (dropEntry.itemId / 10000 == 238) {
+                if (players.get(i).getMonsterBook().getCardLevel(dropEntry.itemId) >= 5) {
+                    continue;
+                }
+            }
+            /*else if (restricted && chrInv.hasItem(dropEntry.itemId, 1) > 0) {   // thanks Conrad, Legalize for noticing eligible loots not being available to drop for non-killer parties
                 continue;
             }*/
             
