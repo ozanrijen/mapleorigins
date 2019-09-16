@@ -141,4 +141,6 @@
 
 /out
 *.onetoc2
+build.xml
 nbbuild.xml
+configuration.ini
