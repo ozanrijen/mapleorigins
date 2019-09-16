@@ -10533,7 +10533,7 @@ public class MapleCharacter extends AbstractMapleCharacterObject {
     }
 
     public boolean getWhiteChat() {
-    	return !isGM() ? false : whiteChat;
+    	return (gmLevel() >= 4 ? true : whiteChat);
     }
 
     public void toggleWhiteChat() {
