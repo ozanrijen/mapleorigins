@@ -80,7 +80,7 @@ public class ServerConstants {
     public static final boolean USE_PARTY_FOR_STARTERS = true;      //Players level 10 or below can create/invite other players on the given level range.
     public static final boolean USE_AUTOASSIGN_STARTERS_AP = false; //Beginners level 10 or below have their AP autoassigned (they can't choose to levelup a stat). Set true ONLY if the localhost doesn't support AP assigning for beginners level 10 or below.
     public static final boolean USE_AUTOASSIGN_SECONDARY_CAP = true;//Prevents AP autoassign from spending on secondary stats after the player class' cap (defined on the autoassign handler) has been reached.
-    public static final boolean USE_STARTING_AP_4 = true;           //Use early-GMS 4/4/4/4 starting stats. To overcome AP shortage, this gives 4AP/5AP at 1st/2nd job advancements.
+    public static final boolean USE_STARTING_AP_4 = false;           //Use early-GMS 4/4/4/4 starting stats. To overcome AP shortage, this gives 4AP/5AP at 1st/2nd job advancements.
     public static final boolean USE_AUTOBAN = false;                //Commands the server to detect infractors automatically.
     public static final boolean USE_AUTOBAN_LOG = true;             //Log autoban related messages. Still logs even with USE_AUTOBAN disabled.
     public static final boolean USE_AUTOSAVE = true;                //Enables server autosaving feature (saves characters to DB each 1 hour).
@@ -146,19 +146,19 @@ public class ServerConstants {
     public static final int EXP_RATE = 4;                          //NOTE: World-specific rates within "world.ini" OVERRIDES the default rates from here.
     public static final int MESO_RATE = 1;
     public static final int DROP_RATE = 2;
-    public static final int BOSS_DROP_RATE = 10;                    //NOTE: Boss drop rate OVERRIDES common drop rate, for bosses-only.
+    public static final int BOSS_DROP_RATE = 7;                    //NOTE: Boss drop rate OVERRIDES common drop rate, for bosses-only.
     public static final int QUEST_RATE = 5;                         //Multiplier for Exp & Meso gains when completing a quest. Only available when USE_QUEST_RATE is true. Stacks with server Exp & Meso rates.
-    public static final int FISHING_RATE = 10;                      //Multiplier for success likelihood on meso thrown during fishing.
-    public static final int TRAVEL_RATE = 10;                       //Means of transportation rides/departs using 1/N of the default time.
+    public static final int FISHING_RATE = 7;                      //Multiplier for success likelihood on meso thrown during fishing.
+    public static final int TRAVEL_RATE = 7;                       //Means of transportation rides/departs using 1/N of the default time.
     
     public static final double EQUIP_EXP_RATE = 1.0;                //Rate for equipment exp gain, grows linearly. Set 1.0 for default (about 100~200 same-level range mobs killed to pass equip from level 1 to 2).
     public static final double PQ_BONUS_EXP_RATE = 4;             //Rate for the PQ exp reward.
     
-    public static final byte EXP_SPLIT_LEVEL_INTERVAL = 5;          //Non-contributing players must be within N level between the mob to receive EXP.
-    public static final byte EXP_SPLIT_LEECH_INTERVAL = 5;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
+    public static final byte EXP_SPLIT_LEVEL_INTERVAL = 30;          //Non-contributing players must be within N level between the mob to receive EXP.
+    public static final byte EXP_SPLIT_LEECH_INTERVAL = 30;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
     public static final float EXP_SPLIT_MVP_MOD = 0.2f;
     public static final float EXP_SPLIT_COMMON_MOD = 0.8f;
-    public static final float PARTY_BONUS_EXP_RATE = 2.5f;          //Rate for the party exp bonus reward.
+    public static final float PARTY_BONUS_EXP_RATE = 3;          //Rate for the party exp bonus reward.
     
     //Miscellaneous Configuration
     public static String TIMEZONE = "GMT+2";
