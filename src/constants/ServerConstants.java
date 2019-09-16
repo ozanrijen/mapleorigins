@@ -158,7 +158,7 @@ public class ServerConstants {
     public static final byte EXP_SPLIT_LEECH_INTERVAL = 30;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
     public static final float EXP_SPLIT_MVP_MOD = 0.2f;
     public static final float EXP_SPLIT_COMMON_MOD = 0.8f;
-    public static final float PARTY_BONUS_EXP_RATE = 3;          //Rate for the party exp bonus reward.
+    public static final float PARTY_BONUS_EXP_RATE = 3.0f;          //Rate for the party exp bonus reward.
     
     //Miscellaneous Configuration
     public static String TIMEZONE = "GMT+2";
