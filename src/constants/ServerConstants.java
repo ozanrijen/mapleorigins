@@ -154,11 +154,11 @@ public class ServerConstants {
     public static final double EQUIP_EXP_RATE = 1.0;                //Rate for equipment exp gain, grows linearly. Set 1.0 for default (about 100~200 same-level range mobs killed to pass equip from level 1 to 2).
     public static final double PQ_BONUS_EXP_RATE = 4;             //Rate for the PQ exp reward.
     
-    public static final byte EXP_SPLIT_LEVEL_INTERVAL = 30;          //Non-contributing players must be within N level between the mob to receive EXP.
-    public static final byte EXP_SPLIT_LEECH_INTERVAL = 30;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
+    public static final byte EXP_SPLIT_LEVEL_INTERVAL = 10;          //Non-contributing players must be within N level between the mob to receive EXP.
+    public static final byte EXP_SPLIT_LEECH_INTERVAL = 10;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
     public static final float EXP_SPLIT_MVP_MOD = 0.2f;
     public static final float EXP_SPLIT_COMMON_MOD = 0.8f;
-    public static final float PARTY_BONUS_EXP_RATE = 3.0f;          //Rate for the party exp bonus reward.
+    public static final float PARTY_BONUS_EXP_RATE = 0.2f;          //Rate for the party exp bonus reward.
     
     //Miscellaneous Configuration
     public static String TIMEZONE = "GMT+2";
