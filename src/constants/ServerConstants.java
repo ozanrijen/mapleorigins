@@ -158,7 +158,10 @@ public class ServerConstants {
     public static final byte EXP_SPLIT_LEECH_INTERVAL = 10;          //Non-contributing players must be within N level between any contributing party member to receive EXP.
     public static final float EXP_SPLIT_MVP_MOD = 0.2f;
     public static final float EXP_SPLIT_COMMON_MOD = 0.8f;
-    public static final float PARTY_BONUS_EXP_RATE = 0.2f;          //Rate for the party exp bonus reward.
+    public static final float PARTY_BONUS_EXP_RATE = 8.0f;          //Rate for the party exp bonus reward.
+    
+    
+    
     
     //Miscellaneous Configuration
     public static String TIMEZONE = "GMT+2";
@@ -184,7 +187,7 @@ public class ServerConstants {
     
     //Map Monitor Configuration
     public static final int ITEM_EXPIRE_CHECK = 10 * 1000;      //Interval between item expiring tasks on maps, which checks and makes disappear expired items.
-    public static final int ITEM_LIMIT_ON_MAP = 200;            //Max number of items allowed on a map.
+    public static final int ITEM_LIMIT_ON_MAP = 500;            //Max number of items allowed on a map.
     public static final int MAP_VISITED_SIZE = 5;               //Max length for last mapids visited by a player. This is used to recover and update drops on these maps accordingly with player actions.
     public static final int MAP_DAMAGE_OVERTIME_INTERVAL = 5000;//Interval in milliseconds between map environment damage (e.g. El Nath and Aqua Road surrondings).
     
@@ -234,8 +237,8 @@ public class ServerConstants {
     
     //Guild Configuration
     public static final int CREATE_GUILD_MIN_PARTNERS = 6;       //Minimum number of members on Guild Headquarters to establish a new guild.
-    public static final int CREATE_GUILD_COST = 1500000;
-    public static final int CHANGE_EMBLEM_COST = 5000000;
+    public static final int CREATE_GUILD_COST = 15000000;
+    public static final int CHANGE_EMBLEM_COST = 50000000;
     public static final int EXPAND_GUILD_BASE_COST = 500000;
     public static final int EXPAND_GUILD_TIER_COST = 1000000;
     public static final int EXPAND_GUILD_MAX_COST = 5000000;
