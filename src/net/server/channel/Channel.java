@@ -81,7 +81,7 @@ import server.maps.MapleMiniDungeonInfo;
 
 public final class Channel {
 
-    private int port = 7575;
+    private int port = 8585;
     private PlayerStorage players = new PlayerStorage();
     private int world, channel;
     private IoAcceptor acceptor;
@@ -141,7 +141,7 @@ public final class Channel {
         this.mapManager = new MapleMapManager(null, world, channel);
         try {
             eventSM = new EventScriptManager(this, getEvents());
-            port = 7575 + this.channel - 1;
+            port = 8585 + this.channel - 1;
             port += (world * 100);
             ip = ServerConstants.HOST + ":" + port;
             IoBuffer.setUseDirectBuffer(false);

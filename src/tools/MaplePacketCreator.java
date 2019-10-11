@@ -1205,7 +1205,7 @@ public class MaplePacketCreator {
 
 	public static byte[] removeKite(int objectid, int animationType) {    // thanks to Arnah (Vertisy)
 		MaplePacketLittleEndianWriter mplew = new MaplePacketLittleEndianWriter();
-		mplew.writeShort(SendOpcode.REMOVE_KITE.getValue());
+		mplew.writeShort(SendOpcode.CANNOT_SPAWN_KITE.getValue());
 		mplew.write(animationType); // 0 is 10/10, 1 just vanishes
 		mplew.writeInt(objectid);
 		return mplew.getPacket();
