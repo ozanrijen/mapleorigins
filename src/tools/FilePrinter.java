@@ -30,6 +30,7 @@ public class FilePrinter {
             CASHITEM_BOUGHT = "interactions/CashLog.txt",
             EXCEPTION = "game/Exceptions.txt",
             LOGIN_EXCEPTION = "game/LoginExceptions.txt",
+            LOGIN_STATUS = "game/LoginStatusExceptions.txt",
             TRADE_EXCEPTION = "game/TradeExceptions.txt",
             SQL_EXCEPTION = "game/SqlExceptions.txt",
             PACKET_HANDLER = "game/packethandler/",

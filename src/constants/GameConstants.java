@@ -61,7 +61,7 @@ public class GameConstants {
     
     // used by the "goto" command for players
     public static final HashMap<String, Integer> GOTO_TOWNS = new HashMap<String, Integer>() {{
-        put("southperry", 60000);
+        //put("southperry", 60000);
         put("amherst", 1000000);
         put("henesys", 100000000);
         put("ellinia", 101000000);

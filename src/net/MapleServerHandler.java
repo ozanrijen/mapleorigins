@@ -137,6 +137,7 @@ public class MapleServerHandler extends IoHandlerAdapter {
             FilePrinter.print(FilePrinter.SESSION, "IoSession with " + session.getRemoteAddress() + " opened on " + sdf.format(Calendar.getInstance().getTime()), false);
         }
 
+        
         byte ivRecv[] = {70, 114, 122, 82};
         byte ivSend[] = {82, 48, 120, 115};
         ivRecv[3] = (byte) (Math.random() * 255);

@@ -14,7 +14,7 @@ public class ServerConstants {
     public static final boolean DB_CONNECTION_POOL = true;      //Installs a connection pool to hub DB connections. Set false to default.
     
     //Server Version
-    public static short VERSION = 83;
+    public static short VERSION = 90;
 
     //Login Configuration
     public static final int WLDLIST_SIZE = 21;                  //Max possible worlds on the server.

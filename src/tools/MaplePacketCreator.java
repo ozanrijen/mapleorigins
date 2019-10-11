@@ -580,11 +580,11 @@ public class MaplePacketCreator {
          * @return
          */
         public static byte[] getHello(short mapleVersion, byte[] sendIv, byte[] recvIv) {
-                final MaplePacketLittleEndianWriter mplew = new MaplePacketLittleEndianWriter(8);
+                final MaplePacketLittleEndianWriter mplew = new MaplePacketLittleEndianWriter(16);
                 mplew.writeShort(0x0E);
                 mplew.writeShort(mapleVersion);
                 mplew.writeShort(1);
-                mplew.write(49);
+                mplew.write(51);
                 mplew.write(recvIv);
                 mplew.write(sendIv);
                 mplew.write(8);
@@ -8357,6 +8357,10 @@ public class MaplePacketCreator {
 		mplew.write(nState);
 			
                 return mplew.getPacket();
+        }
+        
+        public static Object getHello(short VERSION, short[] ivSend, short[] ivRecv) {
+               throw new UnsupportedOperationException("Not yet implemented");
         }
 	
 }
