@@ -688,7 +688,7 @@ public class GameConstants {
         
         MapleDataDirectoryEntry root = mapSource.getRoot();
         for (MapleDataDirectoryEntry objData : root.getSubdirectories()) {
-            if (!objData.getName().contentEquals("Obj")) {
+            if (!objData.getName().contentEquals("obj")) {
                 continue;
             }
             
