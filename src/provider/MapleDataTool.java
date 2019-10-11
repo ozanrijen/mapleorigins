@@ -106,8 +106,13 @@ public class MapleDataTool {
             return  def;
         } else if (data.getType() == MapleDataType.STRING) {
             return Integer.parseInt(getString(data));
-        } else {
-            return ((Integer) data.getData()).intValue();
+        }
+        else if (data.getType() == MapleDataType.SHORT) {
+            Integer newValue = Integer.parseInt(data.getData().toString());
+            return newValue;
+        }
+        else {
+            return (Integer) data.getData();
         }
     }
 
